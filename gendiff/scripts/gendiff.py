@@ -1,9 +1,12 @@
 import argparse
 
+from gendiff.diff.generate_diff import generate_diff
+
 
 def main():
-    args = get_args_from_cmd_usage()
-    print(args)
+    args = vars(get_args_from_cmd_usage())
+    diff = generate_diff(args['first file'], args['second file'])
+    print(diff)
 
 
 def get_args_from_cmd_usage():
