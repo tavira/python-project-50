@@ -13,6 +13,7 @@ python = "^3.10"
 pytest = "^7.4.0"
 pytest-cov = "^4.1.0"
 flake8 = "^6.0.0"
+wemake-python-styleguide = "^0.18.0"
 
 [tool.poetry.scripts]
 gendiff = "gendiff.scripts.gendiff:main"

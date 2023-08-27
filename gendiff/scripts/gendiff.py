@@ -10,19 +10,17 @@ def main():
 
 
 def get_args_from_cmd_usage():
-    description = "Compares two configuration files and shows a difference."
-    arg1_description = "first file"
-    arg2_description = "second file"
-    format_option_help = "set format of output"
+    description = 'Compares two configuration files and shows a difference.'
+    arg1_description = 'first file'
+    arg2_description = 'second file'
+    format_option_help = 'set format of output'
 
     parser = argparse.ArgumentParser(description=description)
     parser.add_argument(arg1_description)
     parser.add_argument(arg2_description)
-    parser.add_argument("-f", "--format", help=format_option_help)
+    parser.add_argument('-f', '--format', help=format_option_help)
 
-    args = parser.parse_args()
-
-    return args
+    return parser.parse_args()
 
 
 if __name__ == '__main__':
